@@ -1,0 +1,43 @@
+#footer{
+    display: flex;
+    align-items: center;
+    padding: 1vmax;
+    background-color: rgb(24 184 240);
+    margin-top: 10vmax;
+    color: white;
+}
+#footer div img{
+    width: 10vmax;
+    padding: 1vmax;
+    cursor: pointer;
+}
+.leftFooter h4{
+    font-family: "Roboto";
+}
+.leftFooter p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+.middleFooter{
+    width: 50%;
+    text-align: center;
+}
+.middleFooter h4{
+    font-size: 4vmax;
+    font-family: "Roboto";
+}
+.rightFooter h4{
+    font-family: "Roboto";
+    font-size: 1.4vmax;
+    text-decoration: underline;
+}
+.middleFooter p{
+    max-width: 60%;
+    margin: 1vmax auto;
+}
+.rightFooter{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: center;
+}

@@ -1,0 +1,20 @@
+#product{
+    width: 17vmax;
+    height: 25vmax;
+    border-radius: 2vmax;
+    border: 2px solid black;
+    margin: 20px;
+}
+#img{
+    width: 15vmax;
+    height: 15vmax;
+    margin-left: 1vmax;
+    margin-top: 2.5vmax;
+}
+#Product_Details{
+    width: 14vmax;
+    height: 2.5vmax;
+    margin-left: 50px;
+    margin-top: 25px;
+
+}

@@ -1,23 +1,31 @@
-import { BrowserRouter,Routes,Route } from 'react-router-dom';
-import './App.css';
-import { Nav } from './components/Nav';
-import { Footer } from './components/Footer';
-import { SignUp } from './components/SignUp';
+import "./App.css";
+import Header from "./components/layouts/header/Header";
+import { BrowserRouter as Router } from "react-router-dom";
+import Webfont from "webfontloader";
+import React from "react";
+import Footer from "./components/layouts/footer/Footer";
+import { Route, Routes } from "react-router-dom";
+import Home from "./components/Home/Home";
+import ProductDetails from "./components/Home/product/ProductDetails";
 function App() {
+  React.useEffect(() => {
+    Webfont.load({
+      google: {
+        families: ["Roboto", "Droid Sans", "Chilanka"],
+      },
+    });
+  }, []);
   return (
-    <div className='app'>
-      <BrowserRouter>
-      <Nav/>
+    <>
+      <Router>
+        <Header />
         <Routes>
-          <Route path="/" element={<h1> This is prodct pge </h1>}/>
-          <Route path="/chart" element={<h1>This is Add to chart page</h1>}/>
-          <Route path="/login" element={<h1> This is Login page </h1>}/>
-          <Route path="/signup" element={<SignUp/>}/>
-          <Route path="/logout" element={<h1>This is logout</h1>}></Route>
+          <Route extact path="/" element={<Home/>} />
+          <Route extact path ="/product/:id" element={<ProductDetails />}/>
         </Routes>
-      </BrowserRouter>
-      <Footer/>
-    </div>
+        <Footer />
+      </Router>
+    </>
   );
 }
 

@@ -1,59 +1,19 @@
-.main-nav{
-    width:100%;
-    height: 3rem;
-    display: grid;
-    background-color: #1b4242;
+*{
+    margin: 0;
+    scroll-behavior: smooth;
 }
-.nav-bar {
-    align-items: center;
-    justify-content: center;
-    display: grid;
-    grid-column: 4;
-    text-decoration: none;
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance: none;
 }
-.nav-bar li{
-    margin: 0px 20px 100px 20px;
-    display: inline-block;
-    text-decoration: none;
+
+input[type="number"]{
+    -max-appearance:textfield
 }
-.routes{
-    color: white;
-    text-decoration: none;
+.redColor{
+    color: red;
 }
-.nav-bar ul li{
-    color: white;
-    text-decoration: none;
-    margin-top: 10px;
-}
-.app-name{
-    color: white;
-    text-decoration: none;
-}
-.footer{
-    width: 100%;
-    height: 2rem;
-    color: white;
-    position: fixed;
-    background-color: #1b4242;
-    bottom:0;
-    align-items: center;
-    justify-content: center;
-}
-.register{
-    margin-top: 8%;
-    margin-left: 35%;
-}
-.register h2{
-    margin-left: 12%;
-}
-.register input{
-    display: block;
-    margin: 20px;
-    width: 300px;
-    height: 40px;
-    border: 2px solid black;
-    border-radius: 20px;
-}
-.signup-botton{
-    margin-left: 14%;
+.greenColor{
+    color: green;
 }
